@@ -193,36 +193,55 @@ const useInitMainPage = () => {
     })
 
     //Change bg section
-    gsap.to('#changeBgSection', {
-        scrollTrigger: {
-            trigger: '#changeBg1',
-            start: 'top top',
-            end: 'bottom bottom',
-            toggleActions: 'play none reverse none',
-        },
-        background: 'blue',
-    })
 
-    gsap.to('#changeBgSection', {
+    const changeBg = gsap.timeline({
         scrollTrigger: {
-            trigger: '#changeBg2',
-            start: 'top top',
-            end: 'bottom bottom',
-
+            trigger: '#changeBgSection',
+            start: '20% 50%',
+            end: '80% 50%',
             scrub: 1,
+            markers: true,
         },
-        background: 'red',
     })
-    gsap.to('#changeBgSection', {
-        scrollTrigger: {
-            trigger: '#changeBg3',
-            start: 'top top',
-            end: 'bottom bottom',
 
-            scrub: 1,
-        },
-        background: 'green',
-    })
+    changeBg
+        .to('#changeBgSection', {
+            background: '#15e499',
+        })
+        .to('#changeBgSection', {
+            background: '#bd7bff',
+        })
+
+    // gsap.to('#changeBgSection', {
+    //     scrollTrigger: {
+    //         trigger: '#changeBg1',
+    //         start: 'top top',
+    //         end: 'bottom bottom',
+    //         toggleActions: 'play none reverse none',
+    //     },
+    //     background: 'blue',
+    // })
+
+    // gsap.to('#changeBgSection', {
+    //     scrollTrigger: {
+    //         trigger: '#changeBg2',
+    //         start: 'top top',
+    //         end: 'bottom bottom',
+
+    //         scrub: 1,
+    //     },
+    //     background: 'red',
+    // })
+    // gsap.to('#changeBgSection', {
+    //     scrollTrigger: {
+    //         trigger: '#changeBg3',
+    //         start: 'top top',
+    //         end: 'bottom bottom',
+
+    //         scrub: 1,
+    //     },
+    //     background: 'green',
+    // })
 }
 
 export default useInitMainPage

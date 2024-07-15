@@ -17,6 +17,7 @@ export default function Home() {
             <TextEffect isNav={true} navType="blackNav"></TextEffect>
 
             <ChangeBgSection isNav={false} navType="blackNav"></ChangeBgSection>
+            <section className="h-[70vh] w-full bg-gradient-to-b from-[#bd7bff] via-[#ffeca7b3] to-white"></section>
         </main>
     )
 }
