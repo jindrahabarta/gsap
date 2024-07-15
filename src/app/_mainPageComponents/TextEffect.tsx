@@ -34,7 +34,7 @@ const TextEffect = ({ isNav, navType }: props) => {
         >
             <div className="relative flex justify-center items-center text-center select-none textEff">
                 <h3
-                    className=" text-[9vw] font-rowdies from-transparent  bg-clip-text text-transparent"
+                    className=" text-[9vw] font-rowdies from-transparent  bg-clip-text text-transparent textBg"
                     style={{
                         backgroundImage:
                             'linear-gradient(to right,rgb(0, 0, 0) ' +
