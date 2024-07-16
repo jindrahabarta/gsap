@@ -200,7 +200,6 @@ const useInitMainPage = () => {
             start: '20% 50%',
             end: '80% 50%',
             scrub: 1,
-            markers: true,
         },
     })
 

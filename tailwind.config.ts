@@ -22,6 +22,11 @@ const config: Config = {
                 orangeCustom1: '#DC5F00',
                 whiteishCustom1: '#EEEEEE',
             },
+
+            flex: {
+                '2': '2 2 0%',
+                '3': '3 3 0%',
+            },
         },
     },
     plugins: [require('@designbycode/tailwindcss-text-stroke')],
