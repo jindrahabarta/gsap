@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Chat from '../_icons/Chat'
 import Link from 'next/link'
 import gsap from 'gsap'
@@ -16,7 +16,7 @@ const NavBar = () => {
 
     // path === '/' && useInitMainPage()
 
-    useGSAP(() => {
+    useEffect(() => {
         //inicializace LAYOUT Věcí
         useInitAnim(path)
 

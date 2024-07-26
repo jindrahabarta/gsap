@@ -1,0 +1,28 @@
+.stripe {
+    animation-name: stripeAnim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stripeAnim {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.stripeDelay1 {
+    animation-delay: 200ms;
+}
+
+.stripeDelay2 {
+    animation-delay: 400ms;
+}

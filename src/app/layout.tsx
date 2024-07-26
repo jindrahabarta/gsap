@@ -5,8 +5,6 @@ import './globals.css'
 import NavBar from './_globalComponents/NavBar'
 import LenisScroll from './_globalComponents/LenisScroll'
 import Footer from './_globalComponents/Footer'
-import Loader from './_globalComponents/Loader'
-import { Suspense } from 'react'
 
 const inter = Inter({ subsets: ['latin'], variable: '--inter' })
 
