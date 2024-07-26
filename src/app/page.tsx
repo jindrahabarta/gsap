@@ -7,7 +7,7 @@ import Webuild from './_mainPageComponents/Webuild'
 
 export default function Home() {
     return (
-        <main className="flex flex-col items-center mainContainer">
+        <main className="flex flex-col items-center mainContainer ">
             <Hero isNav={false}></Hero>
             <VideoSection isNav={true} navType="blackNav"></VideoSection>
             <Webuild isNav={true} navType="blackNav"></Webuild>
