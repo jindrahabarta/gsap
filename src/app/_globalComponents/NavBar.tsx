@@ -7,18 +7,18 @@ import { usePathname } from 'next/navigation'
 import Button from './Button'
 import Cross from '../_icons/Cross'
 import Dots from '../_icons/Dots'
-import useInitAnim from '../_utils/AnimationInit'
-import useInitMainPage from '../_utils/InitMainPage'
+import InitAnimation from '../_utils/AnimationInit'
+import InitMainPage from '../_utils/InitMainPage'
 
 const NavBar = () => {
     const path = usePathname()
 
     useEffect(() => {
         //inicializace LAYOUT Věcí
-        useInitAnim(path)
+        InitAnimation(path)
 
         //inicializace Main page
-        path === '/' && useInitMainPage()
+        path === '/' && InitMainPage()
     }, [path])
 
     const Links: { link: string; text: string }[] = [
