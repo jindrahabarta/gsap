@@ -42,38 +42,38 @@ const NavBar = () => {
 
     const [isOpen, setIsOpen] = useState(true)
 
-    // const open = () => {
-    //     setIsOpen(!isOpen)
+    const open = () => {
+        setIsOpen(!isOpen)
 
-    //     isOpen
-    //         ? gsap.to('.open', {
-    //               width: '100%',
-    //               paddingRight: '2rem',
-    //               paddingLeft: '2rem',
-    //               duration: 0.2,
-    //               ease: 'power2',
-    //           })
-    //         : gsap.to('.close', {
-    //               width: 0,
-    //               paddingRight: 0,
-    //               paddingLeft: 0,
-    //               duration: 0.2,
-    //               ease: 'power2',
-    //           })
+        isOpen
+            ? gsap.to('.open', {
+                  width: '100%',
+                  paddingRight: '2rem',
+                  paddingLeft: '2rem',
+                  duration: 0.2,
+                  ease: 'power2',
+              })
+            : gsap.to('.close', {
+                  width: 0,
+                  paddingRight: 0,
+                  paddingLeft: 0,
+                  duration: 0.2,
+                  ease: 'power2',
+              })
 
-    //     const navTl = gsap.timeline()
+        const navTl = gsap.timeline()
 
-    //     navTl.from('.navLink', {
-    //         opacity: 0,
-    //         x: 100,
-    //     })
+        navTl.from('.navLink', {
+            opacity: 0,
+            x: 100,
+        })
 
-    //     isOpen && navTl.play()
+        isOpen && navTl.play()
 
-    //     isOpen
-    //         ? document.body.classList.add('noScroll')
-    //         : document.body.classList.remove('noScroll')
-    // }
+        isOpen
+            ? document.body.classList.add('noScroll')
+            : document.body.classList.remove('noScroll')
+    }
 
     return (
         <nav className=" flex items-center justify-between px-8 py-4 fixed w-full select-none z-40 bg-transparent navBar">
@@ -110,7 +110,7 @@ const NavBar = () => {
                 <Button className="sm:block hidden">
                     <Chat className="w-7"></Chat>
                 </Button>
-                <Button className="block sm:hidden">
+                <Button className="block sm:hidden" handleClick={open}>
                     <Dots className="w-7"></Dots>
                 </Button>
             </div>
@@ -121,7 +121,7 @@ const NavBar = () => {
                 } absolute top-0 right-0 flex flex-col justify-between bg-darkBlue w-0 h-[100dvh] px-0 py-4  overflow-hidden z-50`}
             >
                 <div className="w-full flex justify-end ">
-                    <Button>
+                    <Button handleClick={open}>
                         <Cross
                             fill="#000"
                             stroke="#000"
@@ -132,6 +132,7 @@ const NavBar = () => {
                 <div className="mt-10 flex flex-col gap-10">
                     {Links.map((link, i: number) => (
                         <Link
+                            onClick={open}
                             className={`text-3xl font-bold text-center navLink`}
                             href={link.link}
                             key={i}

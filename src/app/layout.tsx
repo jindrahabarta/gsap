@@ -39,8 +39,6 @@ export default function RootLayout({
         <html lang="en" className=" overscroll-none">
             <Head>
                 <script src="https://unpkg.com/lenis@1.1.1/dist/lenis.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
             </Head>
             <body
                 className={`${inter.className} ${rowdies.variable} ${roboto.variable} `}
