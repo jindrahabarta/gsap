@@ -8,7 +8,7 @@ import Button from './Button'
 import Cross from '../_icons/Cross'
 import Dots from '../_icons/Dots'
 import useInitAnim from '../_utils/AnimationInit'
-import useInitMainPage from '../_utils/useInitMainPage'
+import useInitMainPage from '../_utils/InitMainPage'
 
 const NavBar = () => {
     const path = usePathname()
