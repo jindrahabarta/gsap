@@ -1,11 +1,11 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import Button from '../_globalComponents/Button'
 import Reload from '../_icons/Reload'
 
-const page = () => {
+const SkeletonPage = () => {
     const [isLoaded, setIsLoaded] = useState<boolean>(false)
 
     useEffect(() => {
@@ -61,4 +61,4 @@ const page = () => {
     )
 }
 
-export default page
+export default SkeletonPage

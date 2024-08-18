@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = () => {
+const Gsap = () => {
     return (
         <main className="h-[100vh] w-full px-4 flex flex-col items-center z-20">
             <div className="h-screen w-full sticky top-0 overflow-hidden">
@@ -14,4 +14,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Gsap

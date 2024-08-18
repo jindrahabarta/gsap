@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from './_components/NavBar'
 
-const page = () => {
+const NavBarPage = () => {
     const links: { link: string; text: string }[] = [
         {
             link: '#section-0',
@@ -39,4 +39,4 @@ const page = () => {
     )
 }
 
-export default page
+export default NavBarPage

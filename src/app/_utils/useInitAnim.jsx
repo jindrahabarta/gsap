@@ -1,9 +1,9 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
-const useInitAnim = (path) => {
-    gsap.registerPlugin(ScrollTrigger)
+const AnimationInit = (path) => {
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
+    gsap.registerPlugin(ScrollTrigger)
 
     //NAVBAR Default
     gsap.set('.navLogoDefault', {
@@ -25,9 +25,9 @@ const useInitAnim = (path) => {
         ScrollTrigger.create({
             trigger: section,
             start: 'top top',
-            end: '100% bottom',
+            end: 'bottom bottom',
             duration: 0.5,
-
+            markers: true,
             onEnter: () => {
                 if (section.classList.contains('blackNav')) {
                     gsap.to('.navBar', {
@@ -104,4 +104,4 @@ const useInitAnim = (path) => {
         }
     )
 }
-export default useInitAnim
+export default AnimationInit

@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <main className="flex flex-col items-center mainContainer ">
             <Hero isNav={false}></Hero>
-            <VideoSection isNav={true} navType="blackNav"></VideoSection>
+            <VideoSection isNav={false} navType="blackNav"></VideoSection>
             <Webuild isNav={true} navType="blackNav"></Webuild>
 
             <ColorSec isNav={true} navType="blackNav"></ColorSec>

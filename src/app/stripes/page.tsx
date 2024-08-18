@@ -2,12 +2,11 @@
 import React, { useState } from 'react'
 import './style.css'
 
-const page = () => {
+const Stripes = () => {
     const [isLoaded, setIsLoaded] = useState(false)
 
     setTimeout(() => {
         setIsLoaded(true)
-        console.log(isLoaded)
     }, 200)
 
     return (
@@ -37,4 +36,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Stripes

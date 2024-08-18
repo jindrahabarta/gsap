@@ -11,14 +11,14 @@ const Footer = () => {
 
                         <div>
                             <p>
-                                <span className="font-bold">EUROPE</span>
-                                ,Rozkošného 762/5 150 00 Prague, Czech Republic
+                                <span className="font-bold">USA</span>
+                                ,1064 Angie Drive Pomona, CA 91766
                             </p>
                         </div>
                         <p>
-                            VAT Number: CZ04021126 <br />
-                            Bank Account: 2400786291/2010 <br />
-                            IBAN: CZ1520100000002400786291
+                            VAT Number: 000000000 <br />
+                            Bank Account: 00000000000/0000 <br />
+                            IBAN: CZ0000000000000000000000
                         </p>
                         <Link href="tel:222333333">
                             <Button className="w-full">
@@ -45,8 +45,8 @@ const Footer = () => {
                         <div>
                             <h2>our colony</h2>
                             <p>
-                                <span className=" font-bold">USA</span>, 1200
-                                Brickell Bay, Dr Ste 3417 Miami, FL 33131
+                                <span className=" font-bold">USA</span>, 4717
+                                Worthington Drive, Red Oak, TX 75154
                             </p>
                         </div>
 

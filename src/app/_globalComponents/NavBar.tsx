@@ -14,14 +14,11 @@ import useInitMainPage from '../_utils/useInitMainPage'
 const NavBar = () => {
     const path = usePathname()
 
-    // path === '/' && useInitMainPage()
-
     useEffect(() => {
         //inicializace LAYOUT Věcí
         useInitAnim(path)
 
         //inicializace Main page
-
         path === '/' && useInitMainPage()
     }, [path])
 
@@ -80,7 +77,7 @@ const NavBar = () => {
     }
 
     return (
-        <nav className=" flex items-center justify-between px-8 py-4 fixed w-full select-none z-40 navBar">
+        <nav className=" flex items-center justify-between px-8 py-4 fixed w-full select-none z-40 bg-transparent navBar">
             {/* <Loader path={path}></Loader> */}
             <Link href="/">
                 <h1

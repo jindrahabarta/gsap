@@ -1,7 +1,7 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
-const useInitMainPage = () => {
+const InitMainPage = () => {
     gsap.registerPlugin(ScrollTrigger)
 
     // HERO section
@@ -243,4 +243,4 @@ const useInitMainPage = () => {
     // })
 }
 
-export default useInitMainPage
+export default InitMainPage
