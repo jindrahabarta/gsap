@@ -30,10 +30,7 @@ const NavBar = () => {
             link: '/gsap',
             text: 'Gsap',
         },
-        {
-            link: '/navbar',
-            text: 'Navbar',
-        },
+
         {
             link: '/skeleton',
             text: 'Skeleton',
@@ -157,3 +154,6 @@ const NavBar = () => {
 }
 
 export default NavBar
+function InitNavBarPage() {
+    throw new Error('Function not implemented.')
+}
