@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Rowdies, Quicksand, Roboto } from 'next/font/google'
-import Head from 'next/head'
+
 import './globals.css'
 import NavBar from './_globalComponents/NavBar'
 import LenisScroll from './_globalComponents/LenisScroll'
@@ -37,9 +37,6 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className=" overscroll-none">
-            <Head>
-                <script src="https://unpkg.com/lenis@1.1.1/dist/lenis.min.js"></script>
-            </Head>
             <body
                 className={`${inter.className} ${rowdies.variable} ${roboto.variable} `}
             >
