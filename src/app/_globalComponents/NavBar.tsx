@@ -7,8 +7,7 @@ import { usePathname } from 'next/navigation'
 import Button from './Button'
 import Cross from '../_icons/Cross'
 import Dots from '../_icons/Dots'
-import useInitAnim from '../_utils/useInitAnim'
-import { useGSAP } from '@gsap/react'
+import useInitAnim from '../_utils/AnimationInit'
 import useInitMainPage from '../_utils/useInitMainPage'
 
 const NavBar = () => {
