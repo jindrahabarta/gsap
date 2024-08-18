@@ -27,7 +27,7 @@ const AnimationInit = (path) => {
             start: 'top top',
             end: 'bottom bottom',
             duration: 0.5,
-            markers: true,
+
             onEnter: () => {
                 if (section.classList.contains('blackNav')) {
                     gsap.to('.navBar', {
